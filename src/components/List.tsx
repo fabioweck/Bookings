@@ -9,7 +9,7 @@ const List = () => {
 
   useEffect(() => {
     fetchData();
-  });
+  },[]);
 
   const fetchData = async () => {
     await fetch("https://nodejs-bvc-rooms.onrender.com")
